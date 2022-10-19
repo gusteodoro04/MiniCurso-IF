@@ -1,0 +1,206 @@
+:root{
+    --color-white:#fff;
+
+    --color-blue-500:#00B0F3;
+
+    --color-yellow-500:#FFC800;
+    --color-yellow-900:#614D04;
+
+    --color-gray-300:#F3F3FF;
+    --color-gray-500:#868E96;
+    --color-gray-700:#495057;
+    --color-gray-800:#3A4148;
+
+    --color-green-500:#00FF6E;
+
+    --color-black-800:#000000B3;
+}
+
+
+.bannerHome{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x: clip;
+
+    padding-top: 90px;
+    padding-bottom: 115px;
+
+    background-color: var(--color-blue-500);
+    background-image: url('./assets/Banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+@media (max-width: 1440px){
+    .bannerHome{
+        padding-top: 70px;
+        padding-bottom: 0px;
+    }
+}
+@media (max-width: 1279px){
+    .bannerHome .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.bannerHome .content{
+    max-width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media (max-width: 1279px){
+    .bannerHome .content{
+        max-width: 100%;
+    }
+}
+
+
+.bannerHome h1{
+    margin-top: 38px;
+
+    color: var(--color-white);
+
+   
+}
+@media (min-width: 1440px){
+    .bannerHome h1{
+        max-width: 547px;
+    }
+}
+
+
+.bannerHome h2{
+    margin-top: 24px;
+    color: var(--color-white);
+
+}
+.bannerHome .btn{
+    margin-top: 24px;
+    width: initial;
+}
+
+.bannerHome .imageBanner{
+    z-index: 0;
+}
+.bannerHome .imageBanner img{
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    max-width: 100%;
+}
+
+@media (max-width: 1440px){
+    .bannerHome .imageBanner img{
+       right: -200px;
+    }
+}
+@media (max-width: 1279px){
+    .bannerHome .imageBanner img{
+        position: inherit;
+        margin-top: 30px;
+        margin-bottom: -20%;
+
+    }
+}
+
+.infoBlock{
+    padding: 150px 0px;
+}
+
+@media (max-width: 768px){
+    .infoBlock {
+        padding: 70px 0px;
+    }
+}
+.infoBlock .container{
+    align-items: center;
+   flex-direction: column;
+   
+}
+
+.infoBlock h3{
+    color: var(--color-gray-800)
+}
+
+.benefits{
+    margin-top: 90px;
+    display: flex;
+    gap:75px;
+}
+@media (max-width: 768px){
+    .benefits{
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 50px;
+    }
+    .benefits > div{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+@media (min-width: 768px){
+.benefits h4{
+    margin-top: 40px;
+}
+}
+.benefits p{
+    margin-top: 12px;
+}
+.benefits .benefitsImage{
+    height: 92px;
+    width: 92px;
+    min-width: 15%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .benefits .benefitsImage{
+        background-color: var(--color-gray-300);
+    }
+}
+.benefits .benefitsImage img{
+    max-height: 92px;
+    max-width: 92px;
+}
+
+.infoBlock .btn{
+    margin-top:50px;
+}
+.footer{
+    padding: 50px 0px;
+    color: var(--color-white);
+    background-color: var(--color-blue-500);
+    background: radial-gradient(91.37% 8176.56% at 7.29% 50.25%, #00D6D8 0%, #00AFEB 100%)
+}
+
+.footer .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+.footer .downloads{
+    display: flex;
+    gap: 10px
+}
+.footer a{
+    width: 50%;
+}
+.footer a img{
+    max-width: 100%;
+}
+.footer p{
+    color: var(--color-white);
+
+    transition: 0.2s all;
+}
+.footer p a:hover{
+    color: var(--color-green-500);
+}
+.footer .copywrite{
+    text-align: center;
+}
